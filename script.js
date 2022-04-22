@@ -6,6 +6,9 @@ const ratingNmb = document.getElementById('ratingNmb');
 
 ratings.forEach((rating)=> {
     rating.addEventListener('click', ()=>{
+        ratings.forEach((ratingNmb)=>{
+            ratingNmb.style.background = "hsl(215, 17%, 22%)";
+        })
         ratingNmb.textContent = rating.textContent;
         rating.style.background = "hsl(216, 12%, 54%)";
     });
